@@ -43,7 +43,7 @@ namespace dept.Services
                 foreach (dynamic result in results.Items){
                     Movie movie=new Movie();
                     movie.Title=  result.Snippet.Title;
-                    movie.Url="http://www.youtube.com/v="+result.Id.VideoId;
+                    movie.Url="http://www.youtube.com/watch?v="+result.Id.VideoId;
                     movies.Add(movie);
 
                 }
