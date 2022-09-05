@@ -22,8 +22,8 @@ namespace dept.Controllers
         public IEnumerable<Movie> Get()
         {
             ImdbService imdb=new ImdbService(_configuration);
-        
-            return imdb.GetMovie("test");
+            Console.Out.Write(HttpContext.Request.Query["title"].ToString());
+            return imdb.GetMovie(HttpContext.Request.Query["title"].ToString());
         }
     }
 }

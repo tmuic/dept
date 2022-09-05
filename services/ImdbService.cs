@@ -25,7 +25,6 @@ namespace dept.Services
         public IEnumerable<Movie> GetMovie(String title)
         {
             List<Movie> movies=new List<Movie>();
-            Movie movie=new Movie();
         var handler = new HttpClientHandler() 
         { 
             ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
@@ -43,15 +42,17 @@ namespace dept.Services
                    // {
                             foreach (dynamic movieRsp in stuff.results)
                             {
+                                Movie movie=new Movie();
                                 movie.Title=movieRsp.title;
                                 movie.Url="http://www.imdb.com/title/"+movieRsp.id;
+                                movies.Add(movie);
                             }
                     //}
                     
   
             
             }
-            movies.Add(movie);
+            
             return movies;
 
  
