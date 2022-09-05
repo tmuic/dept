@@ -27,3 +27,15 @@
 /home/osboxes/dept/dept/obj/Debug/net5.0/dept.pdb
 /home/osboxes/dept/dept/obj/Debug/net5.0/dept.genruntimeconfig.cache
 /home/osboxes/dept/dept/bin/Debug/net5.0/Newtonsoft.Json.dll
+/home/osboxes/dept/dept/bin/Debug/net5.0/Google.Apis.dll
+/home/osboxes/dept/dept/bin/Debug/net5.0/Google.Apis.Auth.PlatformServices.dll
+/home/osboxes/dept/dept/bin/Debug/net5.0/Google.Apis.Auth.dll
+/home/osboxes/dept/dept/bin/Debug/net5.0/Google.Apis.Core.dll
+/home/osboxes/dept/dept/bin/Debug/net5.0/Google.Apis.YouTube.v3.dll
+/home/osboxes/dept/dept/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/osboxes/dept/dept/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Binder.dll
+/home/osboxes/dept/dept/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/osboxes/dept/dept/bin/Debug/net5.0/Microsoft.Extensions.Options.dll
+/home/osboxes/dept/dept/bin/Debug/net5.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/home/osboxes/dept/dept/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
+/home/osboxes/dept/dept/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll

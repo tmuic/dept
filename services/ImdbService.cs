@@ -37,17 +37,16 @@ namespace dept.Services
                     Stream receiveStream = response.Content.ReadAsStream();
                     StreamReader readStream = new StreamReader (receiveStream, Encoding.UTF8);
                     var rsp= readStream.ReadToEnd();
-                 dynamic stuff = JsonConvert.DeserializeObject(rsp);
-                    //foreach (dynamic result in stuff)
-                   // {
-                            foreach (dynamic movieRsp in stuff.results)
-                            {
-                                Movie movie=new Movie();
-                                movie.Title=movieRsp.title;
-                                movie.Url="http://www.imdb.com/title/"+movieRsp.id;
-                                movies.Add(movie);
-                            }
-                    //}
+                    dynamic stuff = JsonConvert.DeserializeObject(rsp);
+                
+                    foreach (dynamic movieRsp in stuff.results)
+                    {
+                        Movie movie=new Movie();
+                        movie.Title=movieRsp.title;
+                        movie.Url="http://www.imdb.com/title/"+movieRsp.id;
+                        movies.Add(movie);
+                    }
+                    
                     
   
             
